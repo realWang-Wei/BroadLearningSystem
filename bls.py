@@ -152,7 +152,7 @@ class broadNet(object):
 		return self.decode(test_inputdata.dot(self.W))   
 
 if __name__ == '__main__':
-    data = pd.read_csv('D://DL/data/others/balance-scale/balance-scale.csv')  
+    data = pd.read_csv('./balance-scale.csv')  
   
     le = preprocessing.LabelEncoder()
     for item in data.columns:
